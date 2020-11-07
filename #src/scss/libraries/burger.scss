@@ -1,6 +1,7 @@
-$burgerColor: #fff;
-$burgerCloseColor: #fff;
+$burgerColor: #848789;
+$burgerCloseColor: #848789;
 $burgerBackground: transparent;
+$burgerBorder: #58a589;
 
 .burger {
 	display: block;
@@ -14,7 +15,7 @@ $burgerBackground: transparent;
 	height: 52px;
 	font-size: 0;
 	cursor: pointer;
-	border: 1px solid #f3bd00;
+	border: 1px solid $burgerBorder;
     z-index: 999;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
     &:focus {

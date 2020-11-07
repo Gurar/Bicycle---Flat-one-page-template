@@ -57,7 +57,6 @@ body {
 }
 
 .wrapper {
-	overflow: hidden;
 	min-height: 100%;
 }
 
@@ -86,6 +85,10 @@ body {
 
 // Navbar 
 
+.header {
+	
+}
+
 .navbar {
 	position: absolute;
 	top: 34px;
@@ -101,7 +104,7 @@ body {
 		margin-right: 0;
 	}
 	height: 94px;
-	z-index: 2;
+	z-index: 4;
 	&__nav {
 		display: flex;
 		flex-direction: column;
@@ -127,6 +130,21 @@ body {
 	}
 }
 
+
+
+.menu {
+    position: relative;
+    top: -27px;
+	right: 0;
+    &--disable {
+        display: inline-block;
+        @include breakpoint(sm) {
+            display: none;
+        }
+    }
+}
+
+@import "libraries/burger.scss";
 
 .nav {
 	padding-top: 153px;
@@ -468,9 +486,12 @@ body {
 		font-weight: 700;
 		text-transform: uppercase;
 		letter-spacing: 0.2rem;
-		padding: 20px 60px;
+		padding: 20px 30px;
 		border: 1px solid #fff;
 		color: #fff;
+		@include breakpoint(sm) {
+			padding: 20px 60px;
+		}
 	}
 }
 
